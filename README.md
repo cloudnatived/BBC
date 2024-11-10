@@ -23,5 +23,5 @@ mpiexec -n 2 ./nccl-mpi-jacobi，表示使用nranks=2个进程。
 #jacobi迭代结合NCCL的多卡算法
 nvcc nccl-jacobi.cu -o nccl-jacobi -lnccl -lmpi  -L /usr/lib64/mpich-3.2/lib/ -I /usr/include/mpich-3.2-x86_64
 
-#
+#nccl-overlay
 nvcc nccl-overlay.cu -o nccl-overlay -lnccl -lmpi  -L /usr/lib64/mpich-3.2/lib/ -I /usr/include/mpich-3.2-x86_64
